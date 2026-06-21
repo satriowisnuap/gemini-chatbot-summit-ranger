@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Summit Ranger — Konsultan Pendakian</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="chat-wrapper">
+            <!-- Header -->
+            <div class="chat-header">
+                <div class="avatar-ranger">🏔️</div>
+                <div class="header-info">
+                    <h1>Summit Ranger</h1>
+                    <p class="subtitle">Konsultan Pendakian Berpengalaman · AI-Powered</p>
+                </div>
+                <div class="status-dot" title="Online"></div>
+            </div>
+
+            <!-- Chat Box -->
+            <div id="chat-box" class="chat-box">
+                <!-- Welcome card -->
+                <div class="welcome-msg">
+                    <div class="icon">🧭</div>
+                    <div class="content">
+                        <h3>Selamat datang, Pendaki!</h3>
+                        <p>
+                            Saya Ranger, pemandu gunung dengan pengalaman lebih dari 20 tahun di berbagai jalur
+                            Indonesia. Tanya apapun soal pendakian — jalur, cuaca, gear, keselamatan, atau izin.
+                        </p>
+                        <div class="quick-prompts" style="margin-top: 10px">
+                            <button class="quick-btn" data-prompt="Gunung apa yang cocok untuk pendaki pemula?">
+                                🗻 Rekomendasi gunung
+                            </button>
+                            <button
+                                class="quick-btn"
+                                data-prompt="Apa saja perlengkapan wajib yang harus dibawa saat mendaki?"
+                            >
+                                🎒 Perlengkapan wajib
+                            </button>
+                            <button class="quick-btn" data-prompt="Bagaimana cara mengatasi hipotermia di gunung?">
+                                ❄️ Tips keselamatan
+                            </button>
+                            <button class="quick-btn" data-prompt="Berapa estimasi biaya mendaki Semeru?">
+                                💰 Estimasi biaya
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area">
+                <form id="chat-form">
+                    <div class="input-row">
+                        <input
+                            type="text"
+                            id="user-input"
+                            placeholder="Tanya Ranger soal pendakian..."
+                            autocomplete="off"
+                        />
+                        <button type="submit" id="send-btn" aria-label="Kirim pesan">
+                            <svg viewBox="0 0 24 24">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <p class="input-hint">
+                    Summit Ranger dapat membuat kesalahan. Selalu cek kondisi jalur sebelum mendaki.
+                </p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
